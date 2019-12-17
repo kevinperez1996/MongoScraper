@@ -1,11 +1,11 @@
 
 const mongoose = require ("mongoose");
 
-const schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 //Mongoose Model Used to Store Data 
 
-const newsSchema = new schema ({
+const NewsSchema = new Schema ({
 
     title: {
         type: String,
@@ -15,13 +15,21 @@ const newsSchema = new schema ({
         type: String,
         required: true
     },
-    note: {
-        type: schema.Types.ObjectId,
+    summary: {
+        type: String,
+        required: true
+    },
+    byLine: {
+        type: String,
+        required: true
+    },
+    notes: {
+        type: Schema.Types.ObjectId,
         ref: "Notes"
     }
 
 }); 
 
-const News = mongoose.model("News", newsSchema);
+const News = mongoose.model("News", NewsSchema);
 
 module.exports = News;
