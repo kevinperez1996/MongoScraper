@@ -23,7 +23,7 @@ const NewsSchema = new Schema ({
         type: String,
         required: true
     },
-    notes: {
+    note: {
         type: Schema.Types.ObjectId,
         ref: "Notes"
     }
