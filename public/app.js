@@ -4,7 +4,7 @@ $.getJSON("/news", function(data) {
     for (var i = 0; i < data.length; i++) {
       // Display the apropos information on the page
       $("#news").append("<h3 data-id='" + data[i]._id + "'>" + "Title: " + data[i].title + "." + "</h3>" +
-        "<p>" + "Summary: " + data[i].summary + "<br />" + "Link: " + data[i].link +  "<br />" + data[i].byLine + "</p>");
+        "<p>" + "Summary: " + "<br />" + data[i].summary + "<br />" + "<br />" + "Link: " + "<br />" + data[i].link +  "<br />" + "<br />" + data[i].byLine + "</p>");
     //   $("#news").append()
     //   "<br />" + 
     //   "Summary: " + data[i].summary + "<br />" + "Link: " + data[i].link +  "<br />" + data[i].byLine + "</h3>" );
