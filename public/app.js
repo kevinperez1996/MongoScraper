@@ -3,7 +3,7 @@ $.getJSON("/news", function (data) {
     // For each one
     for (var i = 0; i < data.length; i++) {
         // Display the apropos information on the page
-        $("#news").append("<h3 data-id='" + data[i]._id + "'>" + "Title: " + data[i].title + "." + "</h3>" +
+        $("#news").append("<h3 data-id='" + data[i]._id + "'>" + data[i].title + "." + "</h3>" +
             "<p>" + "Summary: " + "<br />" + data[i].summary + "</p>" + "<br />" + "Link: " +
             "<a href='https://www.caranddriver.com/" + data[i].link + "' target= '_blank'>" + "<br />" + 'https://www.caranddriver.com/' + data[i].link +"</a>" + 
             "<p>" + data[i].byLine + "</p>" + "<br />");
@@ -29,9 +29,9 @@ $(document).on("click", "h3", function () {
             // The title of the article
             $("#notes").append("<h2>" + data.title + "</h2>");
             // An input to enter a new title
-            $("#notes").append("<input id='titleinput' name='title' >");
+            $("#notes").append("<input id='titleinput' placeholder='Title' name='title' >");
             // A textarea to add a new note body
-            $("#notes").append("<textarea id='bodyinput' name='body'></textarea>");
+            $("#notes").append("<textarea id='bodyinput' name='body' placeholder='Body'></textarea>");
             // A button to submit a new note, with the id of the article saved to it
             $("#notes").append("<button data-id='" + data._id + "' id='savenote'>Save Note</button>");
 

@@ -5,7 +5,7 @@
       line-break: loose;
     }
   #wrapper {
-    width: 960px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 5%;
@@ -15,6 +15,7 @@
     overflow: auto;
     width: 60%;
     height: 700px;
+    margin-bottom: 60px;
   }
   #notes {
     float: right;
@@ -25,16 +26,47 @@
     width: 100%;
     background-color: #3b3b3b;
     color:rgb(226, 226, 226);
+    padding: 0px 10px;
+    border-radius: 5px;
+    border: 0.2px solid rgb(119, 212, 123);
   }
   input {
     height: 36px;
     font-size: 24px;
+    margin-bottom: 10px
   }
   textarea {
     height: 200px;
     font-size: 18px;
+    padding-top: 10px;
+    margin-bottom: 10px;
   }
 
   a{
     color:rgb(119, 212, 123); 
   }
+
+  button{
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+    background: rgb(119, 212, 123);
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .scrapeButton{
+    width: 120px;
+    margin-right: 10px;
+  }
+
+  .push {
+    height: 30px;
+}
+.footer{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background: #4d4d4d;
+    margin-top: 50px;
+}
