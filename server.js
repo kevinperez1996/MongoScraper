@@ -26,7 +26,7 @@ app.use(express.static("public"));
 
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/Car&Driver", { useNewUrlParser: true });
+mongoose.connect("mongodb://user:password1@ds137498.mlab.com:37498/heroku_9bwh2sth", { useNewUrlParser: true });
 
 
 //ROUTES
