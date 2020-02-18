@@ -72,7 +72,8 @@ app.get("/scrape", function (req, res) {
         });
 
         // Send a message to the client
-        res.send("Scrape Complete, press the 'back' button to see results");
+        // res.send("Scrape Complete, press the 'back' button to see results");
+        res.redirect("/");
     });
 });
 
