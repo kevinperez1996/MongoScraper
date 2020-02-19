@@ -15,3 +15,5 @@
 * Cheerio 
 
 [Check it out!](https://obscure-bastion-98453.herokuapp.com/)
+
+![GitHub Logo](/images/Scraper.png)
